@@ -1,0 +1,12 @@
+[Service]
+Type=simple
+User=centos
+Group=centos
+WorkingDirectory=/usr/lib/testweb
+ExecStart=/usr/local/bin/testweb
+TimeoutSec=30
+RestartSec=15s
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
